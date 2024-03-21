@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 
 ## Basic R script
-print("Running..."
+print("Running...")
 
 Sys.sleep(90)
 
