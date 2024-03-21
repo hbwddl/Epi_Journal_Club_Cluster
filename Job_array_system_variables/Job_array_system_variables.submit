@@ -1,14 +1,10 @@
 #!/bin/bash
-#SBATCH --nodes=1
-#SBATCH --mem=4G
-#SBATCH --time=00:10:00
 #SBATCH --partition=short-cpu
 #SBATCH --job-name=R_basic
 #SBATCH --error=R_basic.%J.err
 #SBATCH --output=R_basic.%J.out
-#SBATCH --mail-user=xxxxxxx@emory.edu
-#SBATCH --mail-type=END,FAIL
+#SBATCH --array=1-4
 
 module load R
 
-Rscript R_basic.R
+Rscript R_script_array_system_variables.R
