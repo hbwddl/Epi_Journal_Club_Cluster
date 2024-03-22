@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --partition=short-cpu
-#SBATCH --job-name=R_basic
-#SBATCH --error=R_basic.%J.err
-#SBATCH --output=R_basic.%J.out
+#SBATCH --job-name=R_system_variables
+#SBATCH --error=R_system_variables.%J.err
+#SBATCH --output=R_system_variables.%J.out
 #SBATCH --array=1-4
 
 module load R
