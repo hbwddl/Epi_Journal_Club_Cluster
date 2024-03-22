@@ -6,4 +6,4 @@
 
 module load R
 
-Rscript R_basic.R
+Rscript R_Basic.R
